@@ -19,3 +19,212 @@
   .journey-section{padding:75px 22px}.journey-section>h2{font-size:43px;letter-spacing:-2px}
   .journey-line,.credential-grid{grid-template-columns:1fr}.journey-line article{border-right:0;border-bottom:1px solid var(--line);min-height:auto}
 }
+
+
+/* ================================
+   HERO V3 — REEL-STYLE FRONT PAGE
+   ================================ */
+.hero-v3{
+  min-height:100vh;
+  padding:96px 4.5vw 28px;
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 78% 45%,rgba(94,59,142,.13),transparent 31%),
+    linear-gradient(180deg,#09080b 0%,#0b0a0d 100%);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.hero-v3-grid{
+  position:absolute;inset:0;pointer-events:none;opacity:.45;
+  background:
+    linear-gradient(90deg,transparent calc(25% - .5px),rgba(255,255,255,.05) 25%,transparent calc(25% + .5px)),
+    linear-gradient(90deg,transparent calc(50% - .5px),rgba(255,255,255,.05) 50%,transparent calc(50% + .5px)),
+    linear-gradient(90deg,transparent calc(75% - .5px),rgba(255,255,255,.05) 75%,transparent calc(75% + .5px));
+}
+.hero-v3-copy{
+  position:relative;z-index:2;
+  display:flex;flex-direction:column;justify-content:space-between;
+  padding-right:3vw;
+}
+.hero-v3-top{
+  display:flex;justify-content:space-between;gap:18px;
+  font-size:8px;letter-spacing:.19em;color:#706a74;
+  max-width:760px;
+}
+.hero-v3-main{padding:4vh 0 2vh}
+.hero-v3-kicker{
+  margin:0 0 18px;
+  font-size:10px;letter-spacing:.25em;color:#8a828e;
+}
+.hero-v3-title{
+  margin:0;
+  font-family:"Space Grotesk",sans-serif;
+  font-size:clamp(78px,9.3vw,154px);
+  line-height:.76;
+  letter-spacing:-.075em;
+  font-weight:700;
+  text-transform:uppercase;
+}
+.hero-v3-title span{display:block;color:#f5f2f6}
+.hero-v3-title span:last-child{
+  color:transparent;
+  -webkit-text-stroke:1px rgba(245,242,246,.58);
+}
+.hero-v3-switch{
+  display:flex;gap:18px;align-items:center;
+  margin-top:30px;
+  font-family:"Space Grotesk",sans-serif;
+}
+.hero-v3-switch span{
+  font-size:15px;color:#625c65;letter-spacing:.02em;
+}
+.hero-v3-switch strong{
+  font-size:clamp(23px,2.4vw,37px);
+  color:#a985db;letter-spacing:-.04em;
+}
+.hero-v3-description{
+  max-width:650px;
+  margin:25px 0 0;
+  color:#918a95;
+  line-height:1.78;
+  font-size:13px;
+}
+.hero-v3-actions{display:flex;gap:10px;margin-top:30px}
+.hero-v3-actions a{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:44px;padding:0 18px;
+  border:1px solid #332e37;border-radius:999px;
+  text-decoration:none;
+  font-size:9px;letter-spacing:.12em;
+  background:#0d0c10;
+}
+.hero-v3-actions .hero-v3-primary{
+  background:#eeeaf1;color:#0a090c;border-color:#eeeaf1;font-weight:700;
+}
+.hero-v3-actions .hero-v3-primary:hover{background:#a984df;border-color:#a984df}
+.hero-v3-footer{
+  display:grid;grid-template-columns:1fr 1fr;gap:24px;
+  border-top:1px solid rgba(255,255,255,.08);
+  padding-top:18px;
+}
+.hero-v3-footer div{display:flex;flex-direction:column;gap:6px}
+.hero-v3-footer small{
+  font-size:7px;letter-spacing:.18em;color:#5e5861;
+}
+.hero-v3-footer b{
+  font-size:8px;letter-spacing:.09em;color:#afa8b3;font-weight:600;
+}
+.hero-v3-portrait{
+  position:relative;z-index:2;
+  display:grid;place-items:center;
+  min-height:650px;
+}
+.hero-v3-circle{
+  width:min(39vw,600px);
+  aspect-ratio:1;
+  border-radius:50%;
+  overflow:hidden;
+  position:relative;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 0 0 18px rgba(255,255,255,.012);
+}
+.hero-v3-circle:before{
+  content:"";position:absolute;inset:-11%;
+  border:1px solid rgba(168,132,219,.23);border-radius:50%;
+  z-index:2;pointer-events:none;
+}
+.hero-v3-circle img{
+  width:100%;height:100%;object-fit:cover;object-position:center 35%;
+  filter:saturate(.75) contrast(1.03);
+}
+.hero-v3-caption{
+  position:absolute;
+  display:flex;gap:12px;align-items:flex-start;
+  color:#b3acb7;
+  font-size:8px;line-height:1.55;letter-spacing:.14em;
+}
+.hero-v3-caption small{color:#716a75}
+.cap-one{left:0;top:25%}
+.cap-two{right:0;bottom:22%}
+.hero-v3-sideword{
+  position:absolute;right:-78px;top:50%;
+  transform:rotate(90deg);
+  font-size:7px;letter-spacing:.23em;color:#57515a;
+  white-space:nowrap;
+}
+.hero-v3-scroll{
+  position:absolute;right:4.5vw;bottom:22px;
+  font-size:7px;letter-spacing:.19em;color:#5e5861;
+}
+
+/* Fix the old hero CSS so it cannot interfere */
+.hero-v3 .meta,.hero-v3 .focus,.hero-v3 .hero-copy,.hero-v3 .hero-visual,
+.hero-v3 .portrait,.hero-v3 .chip,.hero-v3 .halo,.hero-v3 .orbit{all:unset}
+
+/* Mobile is composed separately — no desktop squeeze */
+@media(max-width:760px){
+  .hero-v3{
+    min-height:auto;
+    padding:88px 20px 34px;
+    display:flex;
+    flex-direction:column;
+    gap:42px;
+  }
+  .hero-v3-copy{display:block;padding:0}
+  .hero-v3-top{
+    display:flex;justify-content:space-between;
+    font-size:6px;line-height:1.5;
+  }
+  .hero-v3-main{padding:34px 0 0}
+  .hero-v3-kicker{font-size:8px;letter-spacing:.20em}
+  .hero-v3-title{
+    font-size:17vw;
+    line-height:.79;
+    letter-spacing:-.065em;
+  }
+  .hero-v3-switch{
+    margin-top:22px;gap:8px;
+    flex-direction:column;align-items:flex-start;
+  }
+  .hero-v3-switch span{font-size:11px}
+  .hero-v3-switch strong{font-size:23px}
+  .hero-v3-description{
+    font-size:13px;line-height:1.7;
+    margin-top:20px;
+  }
+  .hero-v3-actions{
+    flex-wrap:wrap;margin-top:23px;
+  }
+  .hero-v3-actions a{
+    min-height:41px;padding:0 15px;font-size:8px;
+  }
+  .hero-v3-footer{
+    margin-top:30px;
+    grid-template-columns:1fr;
+    gap:15px;padding-top:16px;
+  }
+  .hero-v3-portrait{
+    min-height:auto;
+    width:100%;
+    padding:6px 0 15px;
+  }
+  .hero-v3-circle{
+    width:min(88vw,500px);
+    box-shadow:none;
+  }
+  .hero-v3-caption{
+    position:static;
+    margin-top:16px;
+    width:100%;
+    justify-content:center;
+  }
+  .cap-two{display:none}
+  .hero-v3-sideword,.hero-v3-scroll{display:none}
+  .hero-v3-grid{
+    opacity:.25;
+    background:
+      linear-gradient(90deg,transparent calc(50% - .5px),rgba(255,255,255,.05) 50%,transparent calc(50% + .5px));
+  }
+}
