@@ -1,144 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Dinesh Chilkuri — DevOps Engineer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Dinesh Chilkuri — DevOps Engineer specializing in AWS, Terraform, Kubernetes, CI/CD, MLOps and cloud automation.">
+  <title>Dinesh Chilkuri | DevOps Engineer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="loader" id="loader"><div>PORTFOLIO / 2026</div><div class="load-main"><strong>DINESH<br>CHILKURI</strong><span><b id="count">0</b>%</span></div><i><em id="bar"></em></i></div>
-
-<header>
-<a class="logo" href="#home">D/C</a>
-<nav><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#experience">Experience</a></nav>
-<a href="#contact">LET'S CONNECT ↗</a>
+<header class="nav" id="siteNav">
+  <a class="brand" href="#home">D/C</a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="pill" href="#contact">Let's Connect →</a>
 </header>
 
 <main>
+  <section id="home" class="hero-exact" aria-label="Dinesh Chilkuri DevOps Engineer">
+    <img class="hero-art" src="assets/hero-reference.jpg" alt="Dinesh Chilkuri DevOps Engineer portfolio hero">
 
-
-<section class="ref-hero" id="home">
-  <div class="ref-photo" aria-hidden="true"></div>
-  <div class="ref-shade"></div>
-
-  <div class="ref-content">
-    <p class="ref-kicker reveal">HI, I’M DINESH CHILKURI</p>
-    <h1 class="ref-title reveal"><span>DEVOPS</span><span>ENGINEER</span></h1>
-    <div class="ref-mantra reveal">BUILD <i></i> AUTOMATE <i></i> DEPLOY <i></i> SCALE</div>
-    <p class="ref-copy reveal">I design and automate reliable cloud infrastructure<br>that powers real-world applications.</p>
-
-    <div class="ref-actions reveal">
-      <a class="ref-primary" href="#projects">View My Work <b>→</b></a>
-      <a href="Dinesh_Chilkuri_DevOps_Resume.pdf" target="_blank">Download Resume <b>↓</b></a>
+    <!-- Invisible interactive hotspots preserve the exact visual while keeping the hero functional. -->
+    <div class="hero-hotspots" aria-label="Hero navigation">
+      <a class="hotspot h-about" href="#about" aria-label="About"></a>
+      <a class="hotspot h-projects" href="#projects" aria-label="Projects"></a>
+      <a class="hotspot h-experience" href="#experience" aria-label="Experience"></a>
+      <a class="hotspot h-certifications" href="#certifications" aria-label="Certifications"></a>
+      <a class="hotspot h-contact" href="#contact" aria-label="Contact"></a>
+      <a class="hotspot h-connect" href="#contact" aria-label="Let's Connect"></a>
+      <a class="hotspot h-work" href="#projects" aria-label="View My Work"></a>
+      <a class="hotspot h-resume" href="assets/Dinesh_Chilkuri_Resume.pdf" download aria-label="Download Resume"></a>
     </div>
+    <a class="scroll-cue" href="#about" aria-label="Scroll to explore"></a>
+  </section>
 
-    <div class="ref-stack reveal">
-      <div><strong>AWS</strong><small>AWS</small></div>
-      <div><strong>☸</strong><small>KUBERNETES</small></div>
-      <div><strong>◆</strong><small>TERRAFORM</small></div>
-      <div><strong>▰</strong><small>DOCKER</small></div>
-      <div><strong>◉</strong><small>GITHUB</small></div>
+  <section id="about" class="section">
+    <p class="kicker">ABOUT ME</p>
+    <h2>Engineering curiosity, scaled to the cloud.</h2>
+    <div class="about-grid">
+      <div>
+        <p>I’m a DevOps and cloud engineer with 4+ years of experience building secure, scalable and automated AWS infrastructure. My work spans Terraform, Kubernetes, Docker, CI/CD, observability, MLOps and GenAI systems.</p>
+        <p>My path started in <strong>Mechanical Engineering</strong>, moved through <strong>Data Analytics</strong>, and evolved into <strong>Cloud, DevOps and AI</strong> — a progression driven by the same goal: turn complex systems into reliable solutions.</p>
+      </div>
+      <div class="journey">
+        <div><b>01</b><span>B.Tech<br><small>Mechanical Engineering · VJIT</small></span></div>
+        <div><b>02</b><span>M.S. Data Analytics<br><small>The Catholic University of America</small></span></div>
+        <div><b>03</b><span>Cloud & DevOps<br><small>AWS · IaC · Kubernetes · Automation</small></span></div>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="ref-overlay-note">
-    <span>☁</span>
-    <em>Cloud<br>Automate<br>Innovate</em>
-  </div>
+  <section id="experience" class="section">
+    <p class="kicker">EXPERIENCE</p>
+    <h2>Building production systems.</h2>
+    <div class="timeline">
+      <article>
+        <div class="date">JUN 2024 — PRESENT</div>
+        <h3>Sr AWS Cloud Engineer</h3>
+        <p class="company">Cognizant · Seattle, WA</p>
+        <p>Architecting AWS platforms and automating infrastructure with Terraform, GitLab/Jenkins, EKS/ECS, observability, serverless workflows, Bedrock-based GenAI and SageMaker MLOps.</p>
+      </article>
+      <article>
+        <div class="date">AUG 2022 — APR 2023</div>
+        <h3>Principle Cloud Engineer</h3>
+        <p class="company">Synopsis · India</p>
+        <p>Built multi-cloud serverless and ML infrastructure across AWS, Azure and GCP; standardized IaC and automated CI/CD while improving cloud cost, latency and reliability.</p>
+      </article>
+      <article>
+        <div class="date">AUG 2020 — AUG 2022</div>
+        <h3>Full Stack Engineer</h3>
+        <p class="company">PhaseZero.ai · India</p>
+        <p>Engineered cloud-native Django platforms, REST APIs, secure authentication, databases, caching and automated AWS/Azure deployments.</p>
+      </article>
+    </div>
+  </section>
 
-  <div class="ref-side-note">SAME<br>CURIOSITY<br>BIGGER<br>SYSTEMS<i></i></div>
-  <div class="ref-scroll">◉ &nbsp; SCROLL TO EXPLORE</div>
-</section>
+  <section id="projects" class="section">
+    <p class="kicker">PROJECTS</p>
+    <h2>From physical automation to cloud automation.</h2>
+    <div class="projects">
+      <article class="project feature">
+        <img src="assets/solar-grass-cutter.jpg" alt="Automated solar powered grass cutter prototype">
+        <div>
+          <span class="tag">B.TECH FINAL PROJECT</span>
+          <h3>Automated Solar-Powered Grass Cutter</h3>
+          <p>Final-semester Mechanical Engineering project focused on solar energy, automation, hardware integration and practical engineering problem-solving.</p>
+          <div class="chips"><span>Solar Energy</span><span>Automation</span><span>Mechanical Engineering</span></div>
+        </div>
+      </article>
+      <article class="project text">
+        <span class="tag">DATA ANALYTICS / PYTHON</span>
+        <h3>COVID-19 Exploratory Data Analysis (EDA)</h3>
+        <p>Exploratory data analysis project focused on working with COVID-19 data to clean, explore and visualize patterns and trends using Python-based data analysis workflows.</p>
+        <div class="chips"><span>Python</span><span>EDA</span><span>Data Analytics</span><span>Visualization</span></div>
+        <a class="project-link" href="https://github.com/ChilkuriDinesh/Team-Projects/blob/main/covid_eda.ipynb" target="_blank" rel="noreferrer">View on GitHub →</a>
+      </article>
+      <article class="project text">
+        <span class="tag">MACHINE LEARNING / PYTHON</span>
+        <h3>Fraud Detection</h3>
+        <p>Machine-learning project for fraud detection, presented as a Jupyter notebook in the Team-Projects repository.</p>
+        <div class="chips"><span>Python</span><span>Machine Learning</span><span>Fraud Detection</span><span>Jupyter Notebook</span></div>
+        <a class="project-link" href="https://github.com/ChilkuriDinesh/Team-Projects/blob/main/fraud_detection_final_.ipynb" target="_blank" rel="noreferrer">View Notebook on GitHub →</a>
+      </article>
+      <article class="project text">
+        <span class="tag">CLOUD / DEVOPS</span>
+        <h3>Production Infrastructure & Automation</h3>
+        <p>Reusable Terraform, CI/CD, container orchestration, monitoring and zero-downtime deployment patterns across production AWS environments.</p>
+        <div class="chips"><span>AWS</span><span>Terraform</span><span>EKS</span><span>GitLab CI</span></div>
+      </article>
+      <article class="project text">
+        <span class="tag">AI / MLOPS</span>
+        <h3>GenAI & MLOps Workflows</h3>
+        <p>Bedrock RAG applications, AI agents and SageMaker pipelines connecting model lifecycle automation with production cloud engineering.</p>
+        <div class="chips"><span>Bedrock</span><span>RAG</span><span>SageMaker</span><span>OpenSearch</span></div>
+      </article>
+    </div>
+    <a class="inline-link" href="https://github.com/ChilkuriDinesh" target="_blank" rel="noreferrer">Explore my GitHub →</a>
+  </section>
 
+  <section class="section" id="skills">
+    <p class="kicker">SKILLS</p>
+    <h2>Tools I use to ship reliably.</h2>
+    <div class="skills">
+      <div><h3>Cloud</h3><p>AWS · Azure · GCP · EC2 · S3 · VPC · RDS · Lambda · EKS · ECS · IAM · CloudWatch</p></div>
+      <div><h3>Infrastructure & Containers</h3><p>Terraform · CloudFormation · Ansible · Sentinel · OPA · Helm · Kubernetes · Docker</p></div>
+      <div><h3>CI/CD & Observability</h3><p>GitLab CI/CD · Jenkins · GitHub Actions · Datadog · Prometheus · Grafana · ELK · Splunk</p></div>
+      <div><h3>AI / MLOps</h3><p>Amazon Bedrock · SageMaker · RAG · OpenSearch · GenAI · MLOps</p></div>
+      <div><h3>Data Analysis & Visualization</h3><p>Python · NumPy · pandas · Matplotlib · Seaborn · Exploratory Data Analysis (EDA)</p></div>
+      <div><h3>Machine Learning</h3><p>scikit-learn · Logistic Regression · Decision Trees · Random Forest · XGBoost · LightGBM</p></div>
+      <div><h3>Data Preparation & Model Evaluation</h3><p>SMOTE · Label Encoding · Standard Scaling · Train/Test Split · Cross-Validation · Confusion Matrix · ROC-AUC</p></div>
+      <div><h3>Data & Messaging</h3><p>Kafka · DynamoDB · Aurora · Amazon SQS · Amazon SNS · EventBridge · RabbitMQ</p></div>
+      <div><h3>Development & Collaboration</h3><p>Google Colab · Git · GitHub · Bash · AWS CLI · Jira · Confluence · Slack</p></div>
+    </div>
+  </section>
 
+  <section id="certifications" class="section">
+    <p class="kicker">CERTIFICATIONS & ACHIEVEMENTS</p>
+    <h2>Learning beyond the classroom.</h2>
+    <div class="cert-grid">
+      <a class="cert" href="assets/certificates/cert-1.jpg" target="_blank" rel="noreferrer"><img src="assets/certificates/cert-1.jpg" alt="NSIC internship certificate"><h3>NSIC Technical Internship</h3><p>Refrigeration & Air Conditioning · AutoCAD 2D & 3D</p></a>
+      <a class="cert" href="assets/certificates/cert-2.jpg" target="_blank" rel="noreferrer"><img src="assets/certificates/cert-2.jpg" alt="IIT Hyderabad Robotics Workshop certificate"><h3>Robotics Workshop</h3><p>IIT Hyderabad Racing · Techgyan 2019</p></a>
+      <a class="cert" href="assets/certificates/cert-3.jpg" target="_blank" rel="noreferrer"><img src="assets/certificates/cert-3.jpg" alt="SAEINDIA student convention certificate"><h3>SAEINDIA Student Convention</h3><p>Refrigeration & Air Conditioning Competition</p></a>
+      <a class="cert" href="assets/certificates/cert-4.jpg" target="_blank" rel="noreferrer"><img src="assets/certificates/cert-4.jpg" alt="SAEINDIA Mechanical CAD certificate"><h3>Mechanical CAD</h3><p>SAEINDIA Student Convention 2019–2020</p></a>
+    </div>
+    <div class="leadership"><span>LEADERSHIP</span><h3>Treasurer — SAEINDIA</h3><p>Vidya Jyothi Institute of Technology student chapter</p></div>
+  </section>
 
-<section class="ticker"><div><span>DEVOPS</span><i>✦</i><span>CLOUD ENGINEERING</span><i>✦</i><span>AUTOMATION</span><i>✦</i><span>PLATFORM ENGINEERING</span><i>✦</i><span>AI INFRASTRUCTURE</span><i>✦</i><span>DEVOPS</span><i>✦</i><span>CLOUD ENGINEERING</span><i>✦</i><span>AUTOMATION</span><i>✦</i><span>PLATFORM ENGINEERING</span><i>✦</i><span>AI INFRASTRUCTURE</span><i>✦</i></div></section>
+  <section id="education" class="section">
+    <p class="kicker">EDUCATION</p>
+    <h2>Built on engineering and analytics.</h2>
+    <div class="education-grid">
+      <article><span class="tag">MASTER'S</span><h3>M.S. — Data Analytics</h3><p>The Catholic University of America</p></article>
+      <article><span class="tag">BACHELOR'S</span><h3>B.Tech — Mechanical Engineering</h3><p>Vidya Jyothi Institute of Technology, India</p></article>
+    </div>
+  </section>
 
-<section class="section" id="about">
-<aside class="reveal">01 / INTRODUCTION</aside>
-<div>
-<p class="eyebrow reveal">ABOUT ME</p>
-<h2 class="reveal">I TURN COMPLEX <span>INFRASTRUCTURE</span> INTO RELIABLE SYSTEMS.</h2>
-<div class="about-grid">
-<p class="summary reveal">AWS Cloud & DevOps Engineer with 4+ years of experience designing, automating, and optimizing secure, scalable cloud environments. My work spans Infrastructure as Code, Kubernetes, CI/CD, observability, GenAI platforms, and MLOps workflows.</p>
-<div class="stats reveal"><div><strong>4+</strong><small>YEARS EXPERIENCE</small></div><div><strong>AWS</strong><small>PRIMARY CLOUD</small></div><div><strong>AI</strong><small>BEDROCK / RAG / SAGEMAKER</small></div></div>
-</div>
-</div>
-</section>
-
-<section class="toolkit">
-<p class="eyebrow reveal">TECHNOLOGIES I WORK WITH</p><h2 class="reveal">MY TOOLKIT</h2>
-<div class="tools reveal"><span>AWS</span><span>Terraform</span><span>Kubernetes</span><span>EKS</span><span>Docker</span><span>GitLab CI/CD</span><span>Jenkins</span><span>GitHub Actions</span><span>CloudWatch</span><span>Datadog</span><span>Prometheus</span><span>Grafana</span><span>Python</span><span>Bash</span><span>Kafka</span><span>Bedrock</span><span>SageMaker</span><span>RAG</span><span>OpenSearch</span><span>Helm</span></div>
-</section>
-
-<section class="section" id="expertise">
-<aside class="reveal">02 / CORE EXPERTISE</aside>
-<div>
-<p class="eyebrow reveal">CORE EXPERTISE / ROAD MAP</p><h2 class="reveal">HOW I BUILD</h2>
-<div class="roadmap">
-<article class="reveal"><b>01</b><div><h3>Cloud Architecture</h3><p>Secure, scalable AWS foundations across VPC, IAM, EC2, RDS, S3, Lambda and EKS.</p></div><small>AWS WELL-ARCHITECTED</small></article>
-<article class="reveal"><b>02</b><div><h3>Infrastructure as Code</h3><p>Reusable Terraform modules, Terraform Enterprise, policy-as-code, governance and repeatable provisioning.</p></div><small>TERRAFORM / SENTINEL</small></article>
-<article class="reveal"><b>03</b><div><h3>Containers & CI/CD</h3><p>GitLab CI, Jenkins, Docker, ECR, ECS, Kubernetes/EKS and Helm for production delivery.</p></div><small>K8S / GITLAB / ECS</small></article>
-<article class="reveal"><b>04</b><div><h3>Observability & Reliability</h3><p>CloudWatch, Datadog, Prometheus, Grafana, ELK, Splunk and OpenTelemetry.</p></div><small>SRE MINDSET</small></article>
-<article class="reveal"><b>05</b><div><h3>GenAI & MLOps</h3><p>Bedrock, Claude/Llama, RAG, OpenSearch, SageMaker Pipelines, deployment and monitoring.</p></div><small>BEDROCK / SAGEMAKER</small></article>
-</div>
-</div>
-</section>
-
-<section class="section" id="projects">
-<aside class="reveal">03 / FEATURED WORK</aside>
-<div>
-<p class="eyebrow reveal">SELECTED ENGINEERING WORK</p><h2 class="reveal">FEATURED PROJECTS</h2>
-<div class="projects"><div class="engineering-feature reveal">
-<div class="engineering-photo"><img src="solar-grass-cutter.jpg" alt="Automated Solar Grass Cutter project"><span>B.TECH / FINAL SEMESTER</span></div>
-<div class="engineering-copy"><p class="eyebrow">ENGINEERING ORIGINS</p><h3>AUTOMATED<br><em>SOLAR GRASS CUTTER</em></h3>
-<p>Final-semester Mechanical Engineering project combining mechanical design, automation and solar-energy concepts in a working grass-cutter platform.</p>
-<div class="tags"><span>Solar Power</span><span>Automation</span><span>Mechanical Design</span><span>Embedded Control</span></div></div>
-</div>
-<article class="project big reveal"><div class="project-top"><span>01</span><span>PLATFORM ENGINEERING</span></div><div class="art gridart"><i></i><i></i><i></i></div><h3>Terraform Enterprise Migration</h3><p>Migrated critical AWS services from legacy provisioning to governed Terraform workflows with reusable modules, GitLab integration, and audit-ready infrastructure.</p><div class="tags"><span>Terraform</span><span>AWS</span><span>GitLab</span><span>Sentinel</span></div></article>
-<article class="project reveal"><div class="project-top"><span>02</span><span>GENAI</span></div><div class="art aiart"><i></i></div><h3>Enterprise RAG Platform</h3><p>Production GenAI workflows using Amazon Bedrock, Claude/Llama models and OpenSearch-backed retrieval.</p><div class="tags"><span>Bedrock</span><span>RAG</span><span>OpenSearch</span></div></article>
-<article class="project reveal"><div class="project-top"><span>03</span><span>MLOPS</span></div><div class="art bars"><i></i><i></i><i></i><i></i></div><h3>SageMaker ML Lifecycle</h3><p>Automated preprocessing, training, deployment, monitoring and experiment tracking.</p><div class="tags"><span>SageMaker</span><span>Python</span><span>CI/CD</span></div></article>
-</div>
-</div>
-</section>
-
-<section class="journey-section" id="journey">
-<p class="eyebrow reveal">04 / ENGINEERING FOUNDATION</p>
-<h2 class="reveal">FROM MACHINES <span>TO CLOUD SYSTEMS.</span></h2>
-<div class="journey-line">
-<article class="reveal"><b>01</b><h3>Mechanical Engineering</h3><p>B.Tech — Vidya Jyothi Institute of Technology</p></article>
-<article class="reveal"><b>02</b><h3>Automation & Robotics</h3><p>Solar grass cutter, robotics, CAD and engineering competitions.</p></article>
-<article class="reveal"><b>03</b><h3>Data Analytics</h3><p>M.S. — The Catholic University of America</p></article>
-<article class="reveal"><b>04</b><h3>Cloud & DevOps</h3><p>AWS · Terraform · Kubernetes · CI/CD · AI Infrastructure</p></article>
-</div>
-<div class="credential-head reveal"><p class="eyebrow">EARLY CREDENTIALS / WORKSHOPS</p><h3>ENGINEERING CREDENTIALS</h3></div>
-<div class="credential-grid">
-<article class="reveal"><small>2020 / NSIC</small><h3>Refrigeration, Air Conditioning & AutoCAD 2D/3D</h3><p>Internship Program — NSIC Technical Services Centre</p></article>
-<article class="reveal"><small>2019 / IIT HYDERABAD</small><h3>Robotics Workshop</h3><p>IIT Hyderabad Racing / Vidyavilla Foundation</p></article>
-<article class="reveal"><small>2019–20 / SAEINDIA</small><h3>Refrigeration & Air Conditioning</h3><p>Student Convention — Tier II</p></article>
-<article class="reveal"><small>2019–20 / SAEINDIA</small><h3>Mechanical CAD</h3><p>Student Convention — Tier II</p></article>
-</div>
-</section>
-
-<section class="experience" id="experience">
-<p class="eyebrow reveal">EXPERIENCE</p><h2 class="reveal">ENGINEERING JOURNEY</h2>
-<div class="exp-list">
-<article class="reveal"><time>2024 — PRESENT</time><div><h3>Sr AWS Cloud Engineer</h3><p>Cognizant • Seattle, WA</p></div><b>01</b></article>
-<article class="reveal"><time>2022 — 2023</time><div><h3>Principle Cloud Engineer</h3><p>Synopsis • India</p></div><b>02</b></article>
-<article class="reveal"><time>2020 — 2022</time><div><h3>Full Stack Engineer</h3><p>PhaseZero.ai • India</p></div><b>03</b></article>
-</div>
-</section>
-
-<section class="contact" id="contact">
-<div class="reveal"><p class="eyebrow">CONTACT / LET'S BUILD</p><h2>HAVE A CLOUD<br>CHALLENGE?</h2><p class="summary">Let’s talk about DevOps, platform engineering, cloud automation, AI infrastructure, or the next system you need to scale.</p><div class="social"><a href="mailto:dineshchilkuri02@gmail.com">EMAIL ↗</a><a href="https://www.linkedin.com/in/chilkuri-dinesh-068480230" target="_blank">LINKEDIN ↗</a><a href="https://github.com/ChilkuriDinesh" target="_blank">GITHUB ↗</a></div></div>
-<div class="contact-card reveal"><small>OPEN TO OPPORTUNITIES</small><h3>DEVOPS / CLOUD / PLATFORM / AI INFRA</h3><a href="mailto:dineshchilkuri02@gmail.com">START A CONVERSATION ↗</a></div>
-<footer><span>© <span id="year"></span> DINESH CHILKURI</span><span>DEVOPS • CLOUD • AI</span><a href="#home">BACK TO TOP ↑</a></footer>
-</section>
+  <section id="contact" class="section contact">
+    <p class="kicker">CONTACT</p>
+    <h2>Let’s build reliable systems.</h2>
+    <p>Open to conversations around DevOps, cloud infrastructure, platform engineering and AI/MLOps.</p>
+    <div class="actions">
+      <a class="primary" href="mailto:dineshchilkuri02@gmail.com">Email Me →</a>
+      <a class="secondary" href="https://www.linkedin.com/in/chilkuri-dinesh-068480230/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      <a class="secondary" href="https://github.com/ChilkuriDinesh" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </div>
+  </section>
 </main>
+
+<footer><b>D/C</b><span>© 2026 Dinesh Chilkuri</span><a href="#home">Back to top ↑</a></footer>
 <script src="script.js"></script>
 </body>
 </html>

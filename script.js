@@ -1,7 +1,24 @@
+const nav = document.getElementById('siteNav');
+const hero = document.getElementById('home');
+const links = [...document.querySelectorAll('.nav nav a')];
+const sections = [...document.querySelectorAll('main section[id]')];
 
-const loader=document.getElementById('loader'),count=document.getElementById('count'),bar=document.getElementById('bar');
-let p=0;const t=setInterval(()=>{p+=Math.floor(Math.random()*9)+4;if(p>=100){p=100;clearInterval(t);setTimeout(()=>loader.classList.add('hidden'),260)}count.textContent=p;bar.style.width=p+'%'},55);
-const words=['SCALABLE SYSTEMS','CLOUD PLATFORMS','DEVOPS PIPELINES','AI INFRASTRUCTURE'];let i=0;const role=document.getElementById('roleWord');
-setInterval(()=>{i=(i+1)%words.length;role.animate([{opacity:1},{opacity:0}],{duration:160,fill:'forwards'}).onfinish=()=>{role.textContent=words[i];role.animate([{opacity:0},{opacity:1}],{duration:230,fill:'forwards'})}},2400);
-const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');o.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>o.observe(el));document.getElementById('year').textContent=new Date().getFullYear();
+const heroObserver = new IntersectionObserver(([entry]) => {
+  const desktop = window.matchMedia('(min-aspect-ratio: 4/3)').matches;
+  if (desktop && entry.intersectionRatio > 0.55) nav.classList.add('on-hero');
+  else nav.classList.remove('on-hero');
+}, { threshold: [0, .55, 1] });
+heroObserver.observe(hero);
+
+const sectionObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      links.forEach(a => a.style.color = a.getAttribute('href') === '#' + entry.target.id ? '#fff' : '');
+    }
+  });
+}, { rootMargin: '-40% 0px -50% 0px' });
+sections.forEach(s => sectionObserver.observe(s));
+
+window.addEventListener('resize', () => {
+  if (!window.matchMedia('(min-aspect-ratio: 4/3)').matches) nav.classList.remove('on-hero');
+});
